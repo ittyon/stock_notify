@@ -8,6 +8,7 @@ import datetime
 # 土日であれば処理しない
 today = datetime.datetime.today()
 if today.weekday() > 4:
+    print("土日なので処理なし")
     exit()
 
 # .envファイル読み込み
